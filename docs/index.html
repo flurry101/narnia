@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Narnia</title>
+  <meta http-equiv="refresh" content="2; url=./winter.html" />
+  <script>
+    window.location.replace('./winter.html');
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #e0f7fa, #f0f4ff);
+      font-family: 'Gloria Hallelujah', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #4b3f72;
+      overflow: hidden;
+    }
+    p {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 1rem 2rem;
+      border: 2px dashed #a29bfe;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(173, 216, 230, 0.4);
+      font-size: 1.3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    a {
+      color: #6c5ce7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: #ffffff;
+      font-size: 1.2em;
+      user-select: none;
+      animation: fall linear infinite;
+    }
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+    @keyframes drift {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(20px); }
+      100% { transform: translateX(0); }
+    }
+    .snowflake:nth-child(1)  { left: 10%; animation-duration: 6s; }
+    .snowflake:nth-child(2)  { left: 25%; animation-duration: 8s; }
+    .snowflake:nth-child(3)  { left: 40%; animation-duration: 5s; }
+    .snowflake:nth-child(4)  { left: 60%; animation-duration: 7s; }
+    .snowflake:nth-child(5)  { left: 75%; animation-duration: 9s; }
+    .snowflake:nth-child(6)  { left: 90%; animation-duration: 6.5s; }
+  </style>
+</head>
+<body>
+  <p>Loading… If you are not redirected, <a href="./winter.html">click here</a>.</p>
+
+  <div class="snowflake">❄</div>
+  <div class="snowflake">✻</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❆</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">✻</div>
+</body>
+</html>
