@@ -24,7 +24,7 @@ A peaceful 3D winter landscape game featuring:
 
 ## 🚀 Live Demo
 
-🔗 [Play it here](https://your-vercel-url.vercel.app)
+🔗 [Play it here](https://flurry101.github.io/narnia/)
 
 ---
 
@@ -40,7 +40,6 @@ A peaceful 3D winter landscape game featuring:
 
 * [ ] Add interactive objects
 * [ ] Add audio ambiance
-* [ ] Add character model
 
 ---
 <!--
